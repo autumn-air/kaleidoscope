@@ -5,8 +5,8 @@ const crons = cronJobs();
 
 crons.interval(
     "first poem",
-    // {minutes: 10}, // every 10 minutes
-    {minutes: 2},
+    {minutes: 10}, // every 10 minutes
+    // {minutes: 2},
     api.myFunctions.sendPoem,
    {
     number: 1,
@@ -17,8 +17,8 @@ crons.interval(
 
 crons.interval(
   "second poem",
-  // {hours: 12},
-  {minutes: 2},
+  {hours: 12},
+  // {minutes: 2},
   api.myFunctions.sendPoem,
   {
     number: 2,
@@ -29,8 +29,8 @@ crons.interval(
 
 crons.interval(
   "third poem",
-  // {hours: 24},
-  {minutes: 2},
+  {hours: 28},
+  // {minutes: 2},
   api.myFunctions.sendPoem,
   {
     number: 3,
