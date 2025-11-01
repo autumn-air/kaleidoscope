@@ -10,7 +10,7 @@ import Sticky from "@/components/Sticky";
 import React from "react";
 import Image from "next/image";
 
-const SITE = "http://localhost:3000/?";
+const SITE = "https://kaleidoscope-alpha.vercel.app/?";
 
 function createParams(body: object, params?: string): string {
   const param = new URLSearchParams(params);

@@ -8,7 +8,7 @@ import { Resend } from "@convex-dev/resend";
 
 const resend: Resend = new Resend(components.resend, { testMode: false });
 
-const SITE = "http://localhost:3000/?";
+const SITE = "https://kaleidoscope-alpha.vercel.app/?";
 
 function createParams(body: object, params?: string): string {
   const param = new URLSearchParams(params);
