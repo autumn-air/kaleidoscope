@@ -6,6 +6,7 @@ import { Resend } from "@convex-dev/resend";
 // Write your Convex functions in any file inside this directory (`convex`).
 // See https://docs.convex.dev/functions for more.
 
+
 const resend: Resend = new Resend(components.resend, { testMode: false });
 
 const SITE = "https://kaleidoscope-alpha.vercel.app/?";
