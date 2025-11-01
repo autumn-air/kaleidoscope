@@ -18,7 +18,6 @@ crons.interval(
 crons.interval(
   "second poem",
   {hours: 12},
-  // {minutes: 2},
   api.myFunctions.sendPoem,
   {
     number: 2,
