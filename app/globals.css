@@ -1,0 +1,132 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@font-face {
+  font-family: shooting-star; 
+  src: url("/shooting-star.ttf");
+}
+
+@font-face {
+  font-family: dream-wish;
+  src: url("/dream-wish.ttf");
+}
+
+@font-face {
+  font-family: pencil;
+  src: url("/pencil.ttf");
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+}
+
+.shooting-star {
+  font-family: shooting-star;
+}
+
+.dream-wish {
+  font-family: dream-wish;
+}
+
+.pencil {
+  font-family: pencil;
+}
+
+/* taken from https://www.w3schools.com/howto/howto_css_blurred_background.asp */
+.bg-image {
+  /* filter: blur(3px);
+  -webkit-filter: blur(3px); */
+
+  background: linear-gradient(
+          rgba(0, 0, 0, 0.45), 
+          rgba(0, 0, 0, 0.45)
+        ), url("/background.png");
+
+  box-sizing: border-box;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-image-2 {
+  /* filter: blur(3px);
+  -webkit-filter: blur(3px); */
+
+  background: linear-gradient(
+          rgba(0, 0, 0, 0.0), 
+          rgba(0, 0, 0, 0.0)
+        ), url("/background-2.png");
+
+  box-sizing: border-box;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-image-3 {
+  /* filter: blur(3px);
+  -webkit-filter: blur(3px); */
+
+  background: linear-gradient(
+          rgba(0, 0, 0, 0.0), 
+          rgba(0, 0, 0, 0.0)
+        ), url("/background-3.png");
+
+  box-sizing: border-box;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-image-4 {
+  /* filter: blur(3px);
+  -webkit-filter: blur(3px); */
+
+  background: linear-gradient(
+          rgba(0, 0, 0, 0.0), 
+          rgba(0, 0, 0, 0.0)
+        ), url("/background-4.png");
+
+  box-sizing: border-box;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.bg-red-sticky {
+  background-image: url("/red-sticky.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-orange-sticky {
+  background-image: url("/orange-sticky.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-yellow-sticky {
+  background-image: url("/yellow-sticky.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
