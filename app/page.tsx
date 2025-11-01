@@ -32,7 +32,7 @@ function useParams() {
   ] as const;
 }
 
-export function Page0() {
+function Page0() {
   const [params, setParams] = useParams();
 
   return (
@@ -53,7 +53,7 @@ export function Page0() {
   );
 }
 
-export function Page1() {
+function Page1() {
   const [email, setEmail] = useState("");
   const [params, setParams] = useParams();
   const send = useMutation(api.myFunctions.sendEmail);
@@ -112,7 +112,7 @@ export function Page1() {
   );
 }
 
-export function Page2() {
+function Page2() {
   return (
     <Sticky
       className="bg-red-sticky -rotate-6 top-75 left-75 p-10.5 w-[225px] h-[225px]"
@@ -123,7 +123,7 @@ export function Page2() {
   );
 }
 
-export function Page3() {
+function Page3() {
   const [params, setParams] = useParams();
   const [show, setShow] = useState(false);
 
@@ -198,7 +198,7 @@ function formatDate(n: number) {
   )}`;
 }
 
-export function Page4() {
+function Page4() {
   const people = (useQuery(api.myFunctions.allPeople) || []).map((p) => ({
     name: (p.name || "").replaceAll(" ", "").substring(0, 9),
     email: p.email,
@@ -509,7 +509,7 @@ function NewBeginnings() {
   );
 }
 
-export function Bridge() {
+function Bridge() {
   const [params, setParams] = useParams();
   const person = useQuery(api.myFunctions.person, {
     email: params.get("email")!,
@@ -777,7 +777,7 @@ export function Bridge() {
 }
 
 
-export function Reve() {
+function Reve() {
   const [params, setParams] = useParams();
   const person = useQuery(api.myFunctions.person, {
     email: params.get("email")!,
