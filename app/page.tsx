@@ -792,7 +792,7 @@ function Reve() {
 
   return (
     <>
-      <div className="bg-image-4 w-[1600px] h-screen" />
+      <div className="bg-image-4 w-[1600px] h-[773px]" />
       <div className="h-screen w-full overflow-clip flex z-10 absolute top-0 left-0 justify-center items-center align-middle bg-transparent">
         <div className="text-white absolute text-[1.4rem] pencil -rotate-1 top-135 left-188">A destination just out of reach.</div>
         <div className="text-white absolute text-[1.1rem] pencil -rotate-2 top-125 left-186">A place I dream of visiting.</div>
