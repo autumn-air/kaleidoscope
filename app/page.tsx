@@ -791,7 +791,7 @@ function Reve() {
   }
 
   useEffect(() => {
-    document.getElementsByTagName("body")[0].classList.add("bg-black");
+    document.getElementsByTagName("body")[0].classList.add("!bg-black");
   }, []);
 
   return (
