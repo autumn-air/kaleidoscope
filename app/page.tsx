@@ -790,6 +790,10 @@ function Reve() {
     setFinish({email: person!.email});
   }
 
+  useEffect(() => {
+    document.getElementsByTagName("body")[0].classList.add("bg-black");
+  }, []);
+
   return (
     <>
       <div className="bg-image-4 w-[1600px] h-[773px]" />
